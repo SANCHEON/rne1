@@ -3,13 +3,10 @@ import pandas as pd
 import numpy as np
 
 # Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "사이드바",
-    ("a", "b", "c")
-)
+
 
 # Using "with" notation
-with st.sidebar:
+add_radio st.sidebar:
     sarib = st.radio(
 
         "학교 구분",
