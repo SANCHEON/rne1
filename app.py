@@ -33,7 +33,7 @@ col1.metric("전국 대학 수", num1, "")
 col2.metric("국공립", num2, f'{round(num2 / num1 * 100)}%')
 col3.metric("사립", num3, f'{round(num3 / num1 * 100)}%')
 
-st.write(f'{salib}기숙사 현황')
+st.write(f'{sarib}기숙사 현황')
 
 
 
