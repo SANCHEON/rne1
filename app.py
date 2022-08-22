@@ -15,7 +15,7 @@ with st.sidebar:
         "학교 구분",
         ("사립", "국공립")
     )
-    if sarib:
+    if sarib == "사립":
         st.write("사립")
     else:
         st.write("국공립")
