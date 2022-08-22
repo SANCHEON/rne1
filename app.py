@@ -10,10 +10,15 @@ add_selectbox = st.sidebar.selectbox(
 
 # Using "with" notation
 with st.sidebar:
-    add_radio = st.radio(
+    sarib = st.radio(
+
         "학교 구분",
         ("사립", "국공립")
     )
+    if sarib:
+        print("사립")
+    else:
+        print("국공립")
 
 
 
