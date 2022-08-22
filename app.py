@@ -11,8 +11,8 @@ add_selectbox = st.sidebar.selectbox(
 # Using "with" notation
 with st.sidebar:
     add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
+        "학교 구분",
+        ("사립", "국공립")
     )
 
 
