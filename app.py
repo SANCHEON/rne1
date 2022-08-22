@@ -16,9 +16,9 @@ with st.sidebar:
         ("사립", "국공립")
     )
     if sarib:
-        st.print("사립")
+        st.write("사립")
     else:
-        st.print("국공립")
+        st.write("국공립")
 
 
 
