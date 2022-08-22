@@ -37,5 +37,7 @@ st.write(f'{sarib}기숙사 현황')
 
 
 
-data[data['설립구분'] == '사립'].groupby(['지역']).mean()
+df = data[data['설립구분'] == '사립'].groupby(['지역']).mean()
+
+st.dataframe(df)
 
