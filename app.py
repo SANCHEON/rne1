@@ -11,7 +11,7 @@ num3 = num1 - num2
 col1, col2, col3 = st.columns(3)
 col1.metric("전국 대학 수", num1, "")
 col2.metric("국공립", num2, num2 / num1 * 100 + "%")
-col3.metric("사립", num3, num3 / nqum1 * 100 + "%")
+col3.metric("사립", num3, num3 / num1 * 100 + "%")
 
 st.dataframe(data)
 
