@@ -35,9 +35,12 @@ col3.metric("사립", num3, f'{round(num3 / num1 * 100)}%')
 
 st.write(f'{sarib}기숙사 현황')
 
+if sarib == "사립":
+        df = data[data['설립구분'] == '사립'].groupby(['지역']).mean()
+else:
+        df = data[data['설립구분'] == '국립'].groupby(['지역']).mean()
 
 
-df = data[data['설립구분'] == '사립'].groupby(['지역']).mean()
 
 st.dataframe(df)
 
