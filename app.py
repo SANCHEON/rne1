@@ -2,6 +2,21 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# Using object notation
+add_selectbox = st.sidebar.selectbox(
+    "사이드바",
+    ("a", "b", "c")
+)
+
+# Using "with" notation
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
+
+
+
 data = pd.read_csv("기숙사수용현황분석.csv")
 num1 = len(data['학교'].unique())
 
